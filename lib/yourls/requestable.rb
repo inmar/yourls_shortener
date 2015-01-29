@@ -25,9 +25,12 @@ module Yourls
     def host
       YOURLS_CONFIG['host']
     end
+<<<<<<< HEAD
 
     def domain
       URI.parse(host).host
     end
+=======
+>>>>>>> 5993439... Add primary code
   end
 end
