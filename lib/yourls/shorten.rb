@@ -11,7 +11,7 @@ module Yourls
     end
 
     def shorturl_request
-      RestClient.get(host, params: shorturl_params)
+      RestClient.get(host, shorturl_params)
     end
 
     def shorturl_params
