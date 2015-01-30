@@ -2,6 +2,7 @@ require 'pry'
 require 'rspec'
 require 'vcr'
 require 'yaml'
+require 'hash_symbolizer'
 
 ROOT = Pathname(File.expand_path(File.join(File.dirname(__FILE__), '..')))
 
@@ -17,7 +18,5 @@ end
 file = ROOT.join(*%w(spec fixtures yourls.yml))
 
 if File.exist?(file)
-    YOURLS_CONFIG = YAML.load_file(file)
+  YOURLS_CONFIG = YAML.load_file(file).symbolize_keys
 end
-
-DOMAIN = URI.parse(YOURLS_CONFIG['host']).host
