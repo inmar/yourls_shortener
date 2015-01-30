@@ -3,7 +3,6 @@ module Yourls
     require 'rest_client'
 
     def already_shortened?
-      binding.pry
       regex = Regexp.new(domain)
       @url =~ regex
     end
@@ -46,7 +45,6 @@ module Yourls
     def host
       config.api_endpoint
     end
-<<<<<<< HEAD
 
     def domain
       config.domain
@@ -55,7 +53,5 @@ module Yourls
     def config
       Yourls::Configuration
     end
-=======
->>>>>>> 5993439... Add primary code
   end
 end
