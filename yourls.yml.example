@@ -1,2 +1,20 @@
-api_key: 'ub31213378483'
-host: 'http://yourls.org/yourls-api.php'
+# This field is required.
+host: http://yourls.org/yourls-api.php
+
+# The API key, sometimes referred to as your signature, is the preferred option.
+# However, you can also use a username and password. There is no need to use
+# both authentication options, and it will default to your API key if you insist
+# on putting both here.
+api_key: ub31213378483
+# username: trinity
+# password: trintrinwubsne0
+
+# Optional fields:
+#
+# The domain is used if you are sending your API requests to a different URI
+# than your shortened domain. If unspecified, it will use the domain in your API
+# endpoint.
+# domain: 'examp.le'
+#
+# timeout: 20
+# open_timeout: 20
