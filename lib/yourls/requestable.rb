@@ -43,7 +43,7 @@ module Yourls
     end
 
     def host
-      config.api_endpoint
+      config.api_endpoint || config.host
     end
 
     def domain
